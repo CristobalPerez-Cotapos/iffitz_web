@@ -87,12 +87,18 @@ p {
 }
 
 .container_con_imagen {
+    display: flex; /* Added */
+    flex-direction: column; /* Ensures vertical stacking */
+    justify-content: flex-start; /* Aligns children to the top */
     background-image: url('Imagen de fondo.jpg');
     background-position: center;
     color: #fff;
     text-align: center;
-    vertical-align: text-top;
     padding: 100px 20px;
+}
+
+.container_con_imagen h1, .container_con_imagen p, .container_con_imagen .cta-button {
+    align-self: center; /* Center-aligns these elements horizontally */
 }
 
 .container_con_imagen h1 {
