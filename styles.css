@@ -91,7 +91,8 @@ p {
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 200px 20px;
+    vertical-align: text-top;
+    padding: 100px 20px;
 }
 
 .container_con_imagen h1 {
