@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+
+
 <title>Iffitz - Descubre eventos cerca de ti</title>
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,35 +24,73 @@
 </header>
 
 <section id="home" class="hero">
-  <h1>Explora eventos cerca de ti</h1>
-  <p>Con Iffitz, descubre en tiempo real conciertos, exposiciones, conferencias, y más. ¡No te pierdas las últimas novedades en tu ubicación!</p>
-  <button>Comienza a explorar</button>
+
+  <div class="content">
+    <h1>Explora eventos cerca de ti</h1>
+    <p>Con Iffitz, descubre en tiempo real conciertos, exposiciones, conferencias, y más. ¡No te pierdas las últimas novedades en tu ubicación!</p>
+    <button>Comienza a explorar</button>
+  </div>
+
+  <div class="carousel">
+    <div><img src="Imagenes/Microfono.jpg" alt="Imagen 1"></div>
+    <div><img src="Imagenes/Imagen de fondo.jpg" alt="Imagen 2"></div>
+    <div><img src="Imagenes/museo.jpeg" alt="Imagen 3"></div>
+  </div>
+  
 </section>
 
 <section id="about">
-  <h2>Conoce Iffitz</h2>
-  <p>Iffitz te permite explorar eventos que están ocurriendo cerca de tu ubicación en tiempo real.</p>
+  <h2>¿Que es Iffitz?</h2>
+  <p>Es una plataforma que te permititrá ver los eventos que existen dentro de tu ciudad,
+    <br> ¿cuantas veces te has perdido un concierto por que no se comunicó bien? ¿A cuantas exposiciones has dejado de ir por que no sabías que existían?
+    <br> Nuestra misión es que <str>nunca más te pierdas de nada</str>, que sepas lo que está pasando a tu alrededor y puedas disfrutar al maximo lo que a ciudad tiene para ofrecerte.
+  </p>
   <!-- Add more paragraphs here -->
 </section>
 
 <section id="features">
-  <h2>Funcionalidades de Iffitz</h2>
+  <h2>¿Por que?</h2>
+
+  <p>Podríamos decir que es para promover la cultura y el arte, pero la verdad es que esta aplicación nace de un problema personal
+     <str>¡¡Queremos hacer cosas y aprovechar la vida!!</str>Estamos profundamente en desacuerdo con estas echados viendo televisión cuando hay un mundo lleno de cosas pasando</p>
   <!-- Add feature blocks here -->
 </section>
 
 <section id="gallery">
-  <h2>Galería de Eventos</h2>
-  <!-- Add screenshots here -->
+  <h2>La Anti-red social</h2>
+  <p>
+    Las redes sociales nos han decepcionado, ya que en vez de conectar a la gente nos han vuelto más aislados, por eso Iffitz es la anti-red social, no queremos que pases horas en la aplicación, 
+    queremos invitarte a salir y disfrutar lo que está pasando en tu ciudad, y que tengas nuevas y mejores experiencias.
+  </p>
 </section>
 
 <section id="testimonials">
-  <h2>Experiencias Compartidas</h2>
-  <!-- Add testimonials here -->
-</section>
-
-<section id="cta">
-  <h2>Únete a la comunidad de Iffitz</h2>
-  <button>Descargar Iffitz</button>
+  <h2>¿Quienes somos?</h2>
+  <div class="persons-container">
+    <section class="person">
+      <img src="Imagenes/Cristóbal.jpg" alt="Persona 1">
+      <div class="info">
+        <h3>Cristóbal</h3>
+        <p>Un apasionado por el mundo de la programación y fanatico eterno del jazz</p>
+      </div>
+    </section>
+  
+    <section class="person">
+      <img src="Imagenes/Victor.jpg" alt="Persona 2">
+      <div class="info">
+        <h3>Victor</h3>
+        <p>Viajero por el mundo que siempre está buscando nuevas experiencias y proyectos en los que aportar</p>
+      </div>
+    </section>
+  
+    <section class="person">
+      <img src="persona3.jpg" alt="Persona 3">
+      <div class="info">
+        <h3>Aníbal</h3>
+        <p>Mentor oficial de la selección, guiandonos dia a dia para llevarte la mejor versión de Iffitz</p>
+      </div>
+    </section>
+  </div>
 </section>
 
 <footer>
@@ -56,6 +100,23 @@
   </nav>
   <!-- Add social media icons here -->
 </footer>
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.carousel').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      speed: 500,
+    });
+  });
+</script>
+
 
 </body>
 </html>
