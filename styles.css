@@ -44,9 +44,8 @@ footer {
 }
 
 img {
-  height: 70vh;
-  width: 50vw
-  scale: 0.5;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero {
@@ -54,49 +53,47 @@ img {
   align-items: center;
 }
 
-
 .content {
-  flex: 1; /* Ocupa todo el espacio disponible */
-  padding: 0 20px; /* Ajusta el espacio entre el texto y el carrusel */
+  flex: 1;
+  padding: 0 20px;
 }
 
 .carousel {
   flex: 1;
   display: flex;
-  justify-content: space-around; /* Distribuye uniformemente las imágenes */
-  align-items: center; /* Centra verticalmente las imágenes */
-  overflow-x: hidden; /* Permite el desplazamiento horizontal si las imágenes son más anchas que el contenedor */
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
   overflow-y: hidden;
-  padding: 20px 0; /* Espacio alrededor del carrusel */
+  padding: 20px 0;
 }
 
 .image-container {
-  max-width: 80%; /* Establece un ancho máximo para las imágenes */
-  max-height: 70vh; /* Establece una altura máxima para las imágenes */
+  max-width: 80%;
+  max-height: 70vh;
 }
 
 .image-container img {
-  display: block; /* Asegura que las imágenes se comporten como bloques */
-  width: auto; /* Permite que las imágenes conserven su relación de aspecto */
-  height: auto; /* Permite que las imágenes conserven su relación de aspecto */
-  max-width: 100%; /* Asegura que las imágenes no se desborden de su contenedor */
-  max-height: 80%; /* Asegura que las imágenes no se desborden de su contenedor */
-  margin: 0 auto; /* Centra horizontalmente las imágenes dentro de su contenedor */
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 80%;
+  margin: 0 auto;
 }
-
-
 
 #testimonials {
   display: flex;
-  flex-direction: column; /* Alinea los elementos de forma vertical */
-  align-items: center; /* Centra horizontalmente los elementos */
+  flex-direction: column;
+  align-items: center;
 }
 
 .persons-container {
   display: flex;
-  flex-direction: row; /* Alinea los elementos de forma horizontal */
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 
 .person {
   align-items: center;
@@ -104,22 +101,20 @@ img {
 }
 
 .person img {
-  width: 40vh; /* Ajusta el tamaño de la foto */
-  height: 40vh; /* Ajusta el tamaño de la foto */
-  border-radius: 50%; /* Hace que la foto tenga bordes redondeados */
-  margin-right: 20px; /* Espacio entre la foto y la información */
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
 .person .info {
-  flex: 1; /* El contenido de la información se expandirá para ocupar todo el espacio disponible */
+  flex: 1;
 }
 
 .person h3 {
-  margin-top: 0; /* Elimina el margen superior predeterminado */
+  margin-top: 0;
 }
 
 .person p {
-  margin-bottom: 0; /* Elimina el margen inferior predeterminado */
+  margin-bottom: 0;
 }
-
-
